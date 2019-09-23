@@ -13,6 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.journeyapps.barcodescanner.Size;
+
 /**
  * A view for scanning barcodes.
  *
@@ -204,5 +206,9 @@ public class BarcodeView extends CameraPreview {
         stopDecoderThread();
 
         super.pause();
+    }
+    
+    public Size getSize(){
+        return super.getPreviewSize();
     }
 }
