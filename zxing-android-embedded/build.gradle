@@ -8,7 +8,6 @@ ext.artifactId = 'zxing-android-embedded'
 dependencies {
 
     api 'androidx.legacy:legacy-support-v4:1.0.0'
-    api 'com.github.kiatuki:zxing:master-SNAPSHOT'
 
     testImplementation 'junit:junit:4.12'
     testImplementation "org.mockito:mockito-core:1.9.5"
