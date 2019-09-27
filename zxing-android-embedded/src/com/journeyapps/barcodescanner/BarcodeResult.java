@@ -26,8 +26,6 @@ public class BarcodeResult {
     private static final float PREVIEW_LINE_WIDTH = 4.0f;
     private static final float PREVIEW_DOT_WIDTH = 10.0f;
 
-    public LuminanceSource source;
-
     protected Result mResult;
     protected SourceData sourceData;
 
