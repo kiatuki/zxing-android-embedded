@@ -2,6 +2,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 
     dependencies {
@@ -15,6 +16,7 @@ subprojects {
         google()
         jcenter()
         mavenLocal()
+        maven { url "https://jitpack.io" }
     }
 
     version = '4.0.2'
@@ -22,9 +24,10 @@ subprojects {
 
     ext.androidBuildTools = '28.0.3'
     ext.androidTargetSdk = 28
-    ext.zxingCore = 'com.google.zxing:core:3.4.0'
+    ext.zxingCore = 'com.github.kiatuki:zxing-android-embedded:master-SNAPSHOT
 }
 
 repositories {
     google()
+    maven { url "https://jitpack.io" }
 }
