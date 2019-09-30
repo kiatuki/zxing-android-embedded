@@ -173,4 +173,8 @@ public class BarcodeResult {
         }
         return scaledPoints;
     }
+
+    public SourceData getSourceData() {
+        return sourceData;
+    }
 }
