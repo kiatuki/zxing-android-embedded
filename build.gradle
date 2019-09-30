@@ -24,7 +24,6 @@ subprojects {
 
     ext.androidBuildTools = '28.0.3'
     ext.androidTargetSdk = 28
-    ext.zxingCore = 'com.github.kiatuki:zxing:master-SNAPSHOT'
 }
 
 repositories {
