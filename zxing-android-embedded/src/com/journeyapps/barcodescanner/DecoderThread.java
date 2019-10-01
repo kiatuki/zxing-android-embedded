@@ -152,7 +152,6 @@ public class DecoderThread {
             Log.d(TAG, "Found barcode in " + (end - start) + " ms");
             if (resultHandler != null) {
                 BarcodeResult barcodeResult = new BarcodeResult(rawResult, sourceData);
-                barcodeResult.source = source;
                 Message message = Message.obtain(resultHandler, R.id.zxing_decode_succeeded, barcodeResult);
                 Bundle bundle = new Bundle();
                 message.setData(bundle);
