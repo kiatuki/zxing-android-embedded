@@ -19,9 +19,11 @@ public class CaptureActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         barcodeScannerView = initializeContent();
-
+        Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+        // Only deal with QR
+        intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
         capture = new CaptureManager(this, barcodeScannerView);
-        capture.initializeFromIntent(getIntent(), savedInstanceState);
+        capture.initializeFromIntent(intent, savedInstanceState);
         capture.decode();
     }
 
