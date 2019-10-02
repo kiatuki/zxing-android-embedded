@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import android.view.KeyEvent;
+import android.content.Intent;
 
 import com.google.zxing.client.android.R;
 
