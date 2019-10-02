@@ -48,7 +48,7 @@ public class CustomScannerActivity extends Activity implements
         Intent intent = new Intent("com.google.zxing.client.android.SCAN");
         // Only deal with QR
         intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-        capture.initializeFromIntent(getIntent(), savedInstanceState);
+        capture.initializeFromIntent(intent, savedInstanceState);
         capture.decode();
 
         changeMaskColor(null);
