@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.content.Intent;
 
 import com.journeyapps.barcodescanner.CaptureManager;
 import com.journeyapps.barcodescanner.DecoratedBarcodeView;
@@ -45,10 +44,7 @@ public class CustomScannerActivity extends Activity implements
         }
 
         capture = new CaptureManager(this, barcodeScannerView);
-        Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-        // Only deal with QR
-        intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-        capture.initializeFromIntent(intent, savedInstanceState);
+        capture.initializeFromIntent(getIntent(), savedInstanceState);
         capture.decode();
 
         changeMaskColor(null);
