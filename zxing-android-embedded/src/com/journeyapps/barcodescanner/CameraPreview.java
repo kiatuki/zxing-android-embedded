@@ -889,6 +889,6 @@ public class CameraPreview extends ViewGroup {
     }
 
     public DisplayConfiguration getDisplayConfiguration() {
-        return DisplayConfiguration displayConfiguration;
+        return displayConfiguration;
     }
 }
