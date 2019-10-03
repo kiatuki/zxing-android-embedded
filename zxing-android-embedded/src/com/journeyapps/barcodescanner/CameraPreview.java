@@ -887,4 +887,8 @@ public class CameraPreview extends ViewGroup {
     public boolean isCameraClosed() {
         return cameraInstance == null || cameraInstance.isCameraClosed();
     }
+
+    public DisplayConfiguration getDisplayConfiguration() {
+        return DisplayConfiguration displayConfiguration;
+    }
 }
