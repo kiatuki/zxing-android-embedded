@@ -207,11 +207,4 @@ public class BarcodeView extends CameraPreview {
 
         super.pause();
     }
-    
-    /**
-     * Getter for camera preview size
-     */
-    public Size getPreviewSize(){
-        return super.getPreviewSize();
-    }
 }
