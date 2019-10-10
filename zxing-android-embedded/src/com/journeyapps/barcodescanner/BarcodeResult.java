@@ -27,7 +27,7 @@ public class BarcodeResult {
     private static final float PREVIEW_DOT_WIDTH = 10.0f;
 
     protected Result mResult;
-    public SourceData sourceData;
+    protected SourceData sourceData;
 
     private final int mScaleFactor = 2;
 
