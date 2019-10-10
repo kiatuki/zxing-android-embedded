@@ -13,8 +13,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.journeyapps.barcodescanner.Size;
-
 /**
  * A view for scanning barcodes.
  *
